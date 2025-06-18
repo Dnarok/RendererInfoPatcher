@@ -1,6 +1,6 @@
 ﻿using BepInEx.Logging;
 
-namespace RenderInfoPatcher
+namespace RendererInfoPatcher
 {
     internal static class Log
     {

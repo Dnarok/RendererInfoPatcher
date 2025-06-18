@@ -2,35 +2,23 @@ using BepInEx;
 using MonoMod.Cil;
 using Mono.Cecil.Cil;
 using UnityEngine;
-using R2API.Utils;
-using System;
-using System.Xml.Linq;
 using UnityEngine.AddressableAssets;
 
-namespace RenderInfoPatcher
+namespace RendererInfoPatcher
 {
-    public static class Extension
-    {
-        public static bool MatchAny(this Instruction instruction, out Instruction param)
-        {
-            param = instruction;
-            return true;
-        }
-    }
-
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
     public class Plugin : BaseUnityPlugin
     {
         public const string PluginGUID = PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "Dnarok";
-        public const string PluginName = "RenderInfoPatcher";
+        public const string PluginName = "RendererInfoPatcher";
         public const string PluginVersion = "1.0.0";
 
         public void Awake()
         {
             Log.Init(Logger);
 
-            // The only usage of RenderInfo that actually uses the default
+            // The only usage of RendererInfo that actually uses the default
             // material address is for skins - we're going to make it work for
             // the other cases, too.
 
