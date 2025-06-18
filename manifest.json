@@ -1,0 +1,10 @@
+﻿{
+	"name": "RendererInfoPatcher",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/Dnarok/RendererInfoPatcher",
+	"description": "Fixes some issues with RendererInfo.",
+	"dependencies": [
+		"bbepis-BepInExPack-5.4.2120",
+		"RiskofThunder-HookGenPatcher-1.2.9"
+	]
+}
